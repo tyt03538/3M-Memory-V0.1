@@ -5,6 +5,22 @@
    <BuildAction
       parallelizeBuildables = "YES"
       buildImplicitDependencies = "YES">
+      <BuildActionEntries>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "CE389E2D1D7EB33200115DF2"
+               BuildableName = "3M-Memory-v0.1.app"
+               BlueprintName = "3M-Memory-v0.1"
+               ReferencedContainer = "container:3M-Memory-v0.1.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+      </BuildActionEntries>
    </BuildAction>
    <TestAction
       buildConfiguration = "Debug"
@@ -12,7 +28,36 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "CE389E441D7EB33200115DF2"
+               BuildableName = "3M-Memory-v0.1Tests.xctest"
+               BlueprintName = "3M-Memory-v0.1Tests"
+               ReferencedContainer = "container:3M-Memory-v0.1.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "CE389E4F1D7EB33200115DF2"
+               BuildableName = "3M-Memory-v0.1UITests.xctest"
+               BlueprintName = "3M-Memory-v0.1UITests"
+               ReferencedContainer = "container:3M-Memory-v0.1.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "CE389E2D1D7EB33200115DF2"
+            BuildableName = "3M-Memory-v0.1.app"
+            BlueprintName = "3M-Memory-v0.1"
+            ReferencedContainer = "container:3M-Memory-v0.1.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>
@@ -26,6 +71,16 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "CE389E2D1D7EB33200115DF2"
+            BuildableName = "3M-Memory-v0.1.app"
+            BlueprintName = "3M-Memory-v0.1"
+            ReferencedContainer = "container:3M-Memory-v0.1.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
@@ -35,6 +90,16 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "CE389E2D1D7EB33200115DF2"
+            BuildableName = "3M-Memory-v0.1.app"
+            BlueprintName = "3M-Memory-v0.1"
+            ReferencedContainer = "container:3M-Memory-v0.1.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE302A1E1D7EC0400007259C /* SelectInputMethodVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE302A1D1D7EC0400007259C /* SelectInputMethodVC.swift */; };
+		CE302A201D7EC1650007259C /* ManualInputVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE302A1F1D7EC1650007259C /* ManualInputVC.swift */; };
 		CE389E321D7EB33200115DF2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE389E311D7EB33200115DF2 /* AppDelegate.swift */; };
 		CE389E341D7EB33200115DF2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE389E331D7EB33200115DF2 /* ViewController.swift */; };
 		CE389E371D7EB33200115DF2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE389E351D7EB33200115DF2 /* Main.storyboard */; };
@@ -15,6 +17,8 @@
 		CE389E3F1D7EB33200115DF2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE389E3D1D7EB33200115DF2 /* LaunchScreen.storyboard */; };
 		CE389E4A1D7EB33200115DF2 /* _M_Memory_v0_1Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE389E491D7EB33200115DF2 /* _M_Memory_v0_1Tests.swift */; };
 		CE389E551D7EB33200115DF2 /* _M_Memory_v0_1UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE389E541D7EB33200115DF2 /* _M_Memory_v0_1UITests.swift */; };
+		CE389E631D7EB8E700115DF2 /* MemoryLandingPageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE389E621D7EB8E700115DF2 /* MemoryLandingPageVC.swift */; };
+		CE389E651D7EBC6900115DF2 /* FlightListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE389E641D7EBC6900115DF2 /* FlightListVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +39,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CE302A1D1D7EC0400007259C /* SelectInputMethodVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectInputMethodVC.swift; sourceTree = "<group>"; };
+		CE302A1F1D7EC1650007259C /* ManualInputVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ManualInputVC.swift; sourceTree = "<group>"; };
 		CE389E2E1D7EB33200115DF2 /* 3M-Memory-v0.1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "3M-Memory-v0.1.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE389E311D7EB33200115DF2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CE389E331D7EB33200115DF2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -49,6 +55,8 @@
 		CE389E501D7EB33200115DF2 /* 3M-Memory-v0.1UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "3M-Memory-v0.1UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE389E541D7EB33200115DF2 /* _M_Memory_v0_1UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _M_Memory_v0_1UITests.swift; sourceTree = "<group>"; };
 		CE389E561D7EB33200115DF2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE389E621D7EB8E700115DF2 /* MemoryLandingPageVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MemoryLandingPageVC.swift; sourceTree = "<group>"; };
+		CE389E641D7EBC6900115DF2 /* FlightListVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlightListVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,7 +109,11 @@
 			children = (
 				CE389E311D7EB33200115DF2 /* AppDelegate.swift */,
 				CE389E331D7EB33200115DF2 /* ViewController.swift */,
+				CE389E621D7EB8E700115DF2 /* MemoryLandingPageVC.swift */,
+				CE389E641D7EBC6900115DF2 /* FlightListVC.swift */,
 				CE389E351D7EB33200115DF2 /* Main.storyboard */,
+				CE302A1F1D7EC1650007259C /* ManualInputVC.swift */,
+				CE302A1D1D7EC0400007259C /* SelectInputMethodVC.swift */,
 				CE389E3B1D7EB33200115DF2 /* Assets.xcassets */,
 				CE389E3D1D7EB33200115DF2 /* LaunchScreen.storyboard */,
 				CE389E401D7EB33200115DF2 /* Info.plist */,
@@ -260,8 +272,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE389E341D7EB33200115DF2 /* ViewController.swift in Sources */,
+				CE389E631D7EB8E700115DF2 /* MemoryLandingPageVC.swift in Sources */,
+				CE302A1E1D7EC0400007259C /* SelectInputMethodVC.swift in Sources */,
 				CE389E321D7EB33200115DF2 /* AppDelegate.swift in Sources */,
 				CE389E3A1D7EB33200115DF2 /* _M_Memory_v0_1.xcdatamodeld in Sources */,
+				CE302A201D7EC1650007259C /* ManualInputVC.swift in Sources */,
+				CE389E651D7EBC6900115DF2 /* FlightListVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -486,6 +502,7 @@
 				CE389E5B1D7EB33200115DF2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CE389E5C1D7EB33200115DF2 /* Build configuration list for PBXNativeTarget "3M-Memory-v0.1Tests" */ = {
 			isa = XCConfigurationList;
@@ -494,6 +511,7 @@
 				CE389E5E1D7EB33200115DF2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CE389E5F1D7EB33200115DF2 /* Build configuration list for PBXNativeTarget "3M-Memory-v0.1UITests" */ = {
 			isa = XCConfigurationList;
@@ -502,6 +520,7 @@
 				CE389E611D7EB33200115DF2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

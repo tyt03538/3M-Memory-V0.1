@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="qZn-2m-yiZ">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--3MLandingPage-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="3MLandingPage" id="BYZ-38-t0r" customClass="ViewController" customModule="_M_Memory_v0_1" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,11 +16,260 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i6S-2v-ZKQ">
+                                <rect key="frame" x="272" y="157" width="57" height="30"/>
+                                <state key="normal" title="Memory"/>
+                                <connections>
+                                    <segue destination="NIC-Zm-v0t" kind="show" id="vQu-1p-MDa"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="3M Landing Page" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7gw-dT-VoG">
+                                <rect key="frame" x="233" y="101" width="134" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="i6S-2v-ZKQ" firstAttribute="centerX" secondItem="7gw-dT-VoG" secondAttribute="centerX" id="SLs-dx-NM0"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="3iR-Ok-zkf"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1861" y="111"/>
+        </scene>
+        <!--MemoryLandingPage-->
+        <scene sceneID="o0t-Gh-mGx">
+            <objects>
+                <viewController title="MemoryLandingPage" id="Nd4-rf-Mub" customClass="MemoryLandingPageVC" customModule="_M_Memory_v0_1" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="IL1-v1-CZT"/>
+                        <viewControllerLayoutGuide type="bottom" id="STg-x1-ZoZ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="pBz-Cw-2NL">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sLO-p3-cSd">
+                                <rect key="frame" x="0.0" y="64" width="600" height="242"/>
+                                <connections>
+                                    <segue destination="sfR-4m-CsW" kind="embed" id="eRc-XZ-D1X"/>
+                                </connections>
+                            </containerView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dm7-qg-O5m">
+                                <rect key="frame" x="267" y="341" width="67" height="30"/>
+                                <state key="normal" title="Flight List"/>
+                                <connections>
+                                    <segue destination="doz-y5-X7H" kind="show" id="x9f-DX-1Sx"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rsH-G7-PcL">
+                                <rect key="frame" x="265" y="391" width="70" height="30"/>
+                                <state key="normal" title="Add Flight"/>
+                                <connections>
+                                    <segue destination="3gN-Tg-THV" kind="show" id="3Y3-ja-e1E"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="sFr-0W-iPf">
+                        <barButtonItem key="leftBarButtonItem" title="Back" id="0B9-bW-NGS">
+                            <connections>
+                                <action selector="BackButton:" destination="Nd4-rf-Mub" id="9QK-sJ-tbD"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3QS-2F-eRc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3480" y="111"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="18H-B9-2Pc">
+            <objects>
+                <navigationController id="NIC-Zm-v0t" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="gVV-4p-jcH">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="Nd4-rf-Mub" kind="relationship" relationship="rootViewController" id="ofw-H7-NJH"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2hn-BN-Tm5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2690" y="111"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="zFI-vW-pwZ">
+            <objects>
+                <navigationController id="qZn-2m-yiZ" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="li7-WX-BMa">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="ZXQ-kW-i7N"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3LB-nA-Hno" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1084" y="111"/>
+        </scene>
+        <!--MapView-->
+        <scene sceneID="Wgk-zF-gUg">
+            <objects>
+                <viewController title="MapView" id="sfR-4m-CsW" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="AUc-jj-dYw"/>
+                        <viewControllerLayoutGuide type="bottom" id="s87-cA-w4J"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ofr-xT-j5O">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="242"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xH2-rK-ITB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4198" y="-371"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="ntp-hw-vni">
+            <objects>
+                <navigationController id="doz-y5-X7H" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ggf-5L-Q2b">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="k2V-lo-2Ii" kind="relationship" relationship="rootViewController" id="8MY-Rr-sjt"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kp5-n5-GR7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4198" y="163"/>
+        </scene>
+        <!--FlightListView-->
+        <scene sceneID="lTh-oT-X6o">
+            <objects>
+                <viewController title="FlightListView" id="k2V-lo-2Ii" customClass="FlightListVC" customModule="_M_Memory_v0_1" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="fDN-KP-xuA"/>
+                        <viewControllerLayoutGuide type="bottom" id="SMR-tb-M7q"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Few-en-5Rq">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="TJb-Cu-jxf">
+                        <barButtonItem key="leftBarButtonItem" title="Back" id="D03-DF-rPq">
+                            <connections>
+                                <action selector="BackButton:" destination="k2V-lo-2Ii" id="rGH-KH-4rA"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UNI-oR-UKZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4922" y="157"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="2NU-Ee-p5f">
+            <objects>
+                <navigationController id="3gN-Tg-THV" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="dtV-Aa-Q7y">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="hWm-P6-3Rf" kind="relationship" relationship="rootViewController" id="Uti-A3-Czj"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qFk-5K-XLR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4186" y="912"/>
+        </scene>
+        <!--SelectInputMethodView-->
+        <scene sceneID="5bd-sp-ljO">
+            <objects>
+                <viewController title="SelectInputMethodView" id="hWm-P6-3Rf" customClass="SelectInputMethodVC" customModule="_M_Memory_v0_1" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="2w5-ur-Ebe"/>
+                        <viewControllerLayoutGuide type="bottom" id="pS6-Wc-W1W"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="6xP-S6-uvD">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Je-ft-kE3">
+                                <rect key="frame" x="256" y="184" width="89" height="30"/>
+                                <state key="normal" title="Manual Input"/>
+                                <connections>
+                                    <segue destination="8AK-j9-Egg" kind="show" id="the-kg-xjp"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="8Nw-Gx-oWm">
+                        <barButtonItem key="leftBarButtonItem" title="Back" id="cAf-tx-ygn">
+                            <connections>
+                                <action selector="BackButton:" destination="hWm-P6-3Rf" id="Q54-TJ-WyK"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="h2q-fV-crW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4930" y="912"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="SLL-Io-ij6">
+            <objects>
+                <navigationController id="8AK-j9-Egg" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="P93-L6-zEj">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="GO4-uM-eUc" kind="relationship" relationship="rootViewController" id="iVr-8y-IgE"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wZf-DT-kZ9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5714" y="912"/>
+        </scene>
+        <!--ManualInputForm-->
+        <scene sceneID="X91-Qe-Vnt">
+            <objects>
+                <viewController title="ManualInputForm" id="GO4-uM-eUc" customClass="ManualInputVC" customModule="_M_Memory_v0_1" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="wKG-O9-Q4y"/>
+                        <viewControllerLayoutGuide type="bottom" id="gOV-tu-AVE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="oTN-of-LcJ">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="nbE-GP-8QA">
+                        <barButtonItem key="leftBarButtonItem" title="Back" id="56g-GO-3P7">
+                            <connections>
+                                <action selector="BackButton:" destination="GO4-uM-eUc" id="irl-Oa-1sv"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Eoq-kE-YUf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6448" y="912"/>
         </scene>
     </scenes>
 </document>
