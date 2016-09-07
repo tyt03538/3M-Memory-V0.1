@@ -19,6 +19,7 @@
 		CE389E551D7EB33200115DF2 /* _M_Memory_v0_1UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE389E541D7EB33200115DF2 /* _M_Memory_v0_1UITests.swift */; };
 		CE389E631D7EB8E700115DF2 /* MemoryLandingPageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE389E621D7EB8E700115DF2 /* MemoryLandingPageVC.swift */; };
 		CE389E651D7EBC6900115DF2 /* FlightListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE389E641D7EBC6900115DF2 /* FlightListVC.swift */; };
+		FC1041931D7FBE490022BDD6 /* UserProfit_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC1041921D7FBE490022BDD6 /* UserProfit_ViewController.swift */; };
 		FC5EB3A41D7EC7FB00EB8731 /* GoogleMapsBase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC5EB3A31D7EC7FB00EB8731 /* GoogleMapsBase.framework */; };
 		FC5EB3A71D7EC81000EB8731 /* GoogleMaps.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC5EB3A51D7EC81000EB8731 /* GoogleMaps.framework */; };
 		FC5EB3A81D7EC81000EB8731 /* GoogleMapsCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC5EB3A61D7EC81000EB8731 /* GoogleMapsCore.framework */; };
@@ -75,6 +76,7 @@
 		CE389E561D7EB33200115DF2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CE389E621D7EB8E700115DF2 /* MemoryLandingPageVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MemoryLandingPageVC.swift; sourceTree = "<group>"; };
 		CE389E641D7EBC6900115DF2 /* FlightListVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlightListVC.swift; sourceTree = "<group>"; };
+		FC1041921D7FBE490022BDD6 /* UserProfit_ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserProfit_ViewController.swift; sourceTree = "<group>"; };
 		FC5EB3A31D7EC7FB00EB8731 /* GoogleMapsBase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleMapsBase.framework; sourceTree = "<group>"; };
 		FC5EB3A51D7EC81000EB8731 /* GoogleMaps.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleMaps.framework; sourceTree = "<group>"; };
 		FC5EB3A61D7EC81000EB8731 /* GoogleMapsCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleMapsCore.framework; sourceTree = "<group>"; };
@@ -164,14 +166,10 @@
 		CE389E301D7EB33200115DF2 /* 3M-Memory-v0.1 */ = {
 			isa = PBXGroup;
 			children = (
+				CE389E351D7EB33200115DF2 /* Main.storyboard */,
 				CE389E311D7EB33200115DF2 /* AppDelegate.swift */,
 				CE389E331D7EB33200115DF2 /* ViewController.swift */,
-				CE389E621D7EB8E700115DF2 /* MemoryLandingPageVC.swift */,
-				CE389E641D7EBC6900115DF2 /* FlightListVC.swift */,
-				CE389E351D7EB33200115DF2 /* Main.storyboard */,
-				CE302A1F1D7EC1650007259C /* ManualInputVC.swift */,
-				CE302A1D1D7EC0400007259C /* SelectInputMethodVC.swift */,
-				FC5EB3C61D7ECAF400EB8731 /* LandingPage_Map_Container.swift */,
+				FC1041911D7FBD840022BDD6 /* UI */,
 				CE389E3B1D7EB33200115DF2 /* Assets.xcassets */,
 				CE389E3D1D7EB33200115DF2 /* LaunchScreen.storyboard */,
 				CE389E401D7EB33200115DF2 /* Info.plist */,
@@ -196,6 +194,19 @@
 				CE389E561D7EB33200115DF2 /* Info.plist */,
 			);
 			path = "3M-Memory-v0.1UITests";
+			sourceTree = "<group>";
+		};
+		FC1041911D7FBD840022BDD6 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				CE389E621D7EB8E700115DF2 /* MemoryLandingPageVC.swift */,
+				FC5EB3C61D7ECAF400EB8731 /* LandingPage_Map_Container.swift */,
+				CE302A1F1D7EC1650007259C /* ManualInputVC.swift */,
+				CE389E641D7EBC6900115DF2 /* FlightListVC.swift */,
+				CE302A1D1D7EC0400007259C /* SelectInputMethodVC.swift */,
+				FC1041921D7FBE490022BDD6 /* UserProfit_ViewController.swift */,
+			);
+			name = UI;
 			sourceTree = "<group>";
 		};
 		FC5EB3C51D7ECA7F00EB8731 /* Framework */ = {
@@ -354,6 +365,7 @@
 				CE389E341D7EB33200115DF2 /* ViewController.swift in Sources */,
 				CE389E631D7EB8E700115DF2 /* MemoryLandingPageVC.swift in Sources */,
 				CE302A1E1D7EC0400007259C /* SelectInputMethodVC.swift in Sources */,
+				FC1041931D7FBE490022BDD6 /* UserProfit_ViewController.swift in Sources */,
 				FC5EB3C71D7ECAF400EB8731 /* LandingPage_Map_Container.swift in Sources */,
 				CE389E321D7EB33200115DF2 /* AppDelegate.swift in Sources */,
 				CE389E3A1D7EB33200115DF2 /* _M_Memory_v0_1.xcdatamodeld in Sources */,
