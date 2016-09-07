@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE2E45491D7FA5C800E43BE4 /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2E45481D7FA5C800E43BE4 /* DataModel.swift */; };
 		CE302A1E1D7EC0400007259C /* SelectInputMethodVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE302A1D1D7EC0400007259C /* SelectInputMethodVC.swift */; };
 		CE302A201D7EC1650007259C /* ManualInputVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE302A1F1D7EC1650007259C /* ManualInputVC.swift */; };
 		CE389E321D7EB33200115DF2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE389E311D7EB33200115DF2 /* AppDelegate.swift */; };
@@ -57,6 +58,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CE2E45481D7FA5C800E43BE4 /* DataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
 		CE302A1D1D7EC0400007259C /* SelectInputMethodVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectInputMethodVC.swift; sourceTree = "<group>"; };
 		CE302A1F1D7EC1650007259C /* ManualInputVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ManualInputVC.swift; sourceTree = "<group>"; };
 		CE389E2E1D7EB33200115DF2 /* 3M-Memory-v0.1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "3M-Memory-v0.1.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -176,6 +178,7 @@
 				CE389E3D1D7EB33200115DF2 /* LaunchScreen.storyboard */,
 				CE389E401D7EB33200115DF2 /* Info.plist */,
 				CE389E381D7EB33200115DF2 /* _M_Memory_v0_1.xcdatamodeld */,
+				CE2E45481D7FA5C800E43BE4 /* DataModel.swift */,
 			);
 			path = "3M-Memory-v0.1";
 			sourceTree = "<group>";
@@ -359,6 +362,7 @@
 				CE389E3A1D7EB33200115DF2 /* _M_Memory_v0_1.xcdatamodeld in Sources */,
 				CE302A201D7EC1650007259C /* ManualInputVC.swift in Sources */,
 				CE389E651D7EBC6900115DF2 /* FlightListVC.swift in Sources */,
+				CE2E45491D7FA5C800E43BE4 /* DataModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
