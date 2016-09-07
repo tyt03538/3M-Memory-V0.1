@@ -20,8 +20,4 @@ class FlightListVC: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
-    @IBAction func BackButton(sender: UIBarButtonItem) {
-        dismissViewControllerAnimated(true, completion:nil)
-    }
 }
