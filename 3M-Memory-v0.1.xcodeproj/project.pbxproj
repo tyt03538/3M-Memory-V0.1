@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE08478C1D7FF0E200E96442 /* ViewFlightList.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE08478B1D7FF0E200E96442 /* ViewFlightList.swift */; };
 		CE2E45491D7FA5C800E43BE4 /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2E45481D7FA5C800E43BE4 /* DataModel.swift */; };
 		CE302A1E1D7EC0400007259C /* SelectInputMethodVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE302A1D1D7EC0400007259C /* SelectInputMethodVC.swift */; };
 		CE302A201D7EC1650007259C /* ManualInputVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE302A1F1D7EC1650007259C /* ManualInputVC.swift */; };
@@ -59,6 +60,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CE08478B1D7FF0E200E96442 /* ViewFlightList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewFlightList.swift; sourceTree = "<group>"; };
 		CE2E45481D7FA5C800E43BE4 /* DataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
 		CE302A1D1D7EC0400007259C /* SelectInputMethodVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectInputMethodVC.swift; sourceTree = "<group>"; };
 		CE302A1F1D7EC1650007259C /* ManualInputVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ManualInputVC.swift; sourceTree = "<group>"; };
@@ -207,6 +209,7 @@
 				CE302A1F1D7EC1650007259C /* ManualInputVC.swift */,
 				CE389E641D7EBC6900115DF2 /* FlightListVC.swift */,
 				CE302A1D1D7EC0400007259C /* SelectInputMethodVC.swift */,
+				CE08478B1D7FF0E200E96442 /* ViewFlightList.swift */,
 				FC1041921D7FBE490022BDD6 /* UserProfit_ViewController.swift */,
 			);
 			name = UI;
@@ -366,6 +369,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE389E341D7EB33200115DF2 /* ViewController.swift in Sources */,
+				CE08478C1D7FF0E200E96442 /* ViewFlightList.swift in Sources */,
 				CE389E631D7EB8E700115DF2 /* MemoryLandingPageVC.swift in Sources */,
 				CE302A1E1D7EC0400007259C /* SelectInputMethodVC.swift in Sources */,
 				FC1041931D7FBE490022BDD6 /* UserProfit_ViewController.swift in Sources */,

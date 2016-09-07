@@ -7,13 +7,26 @@
 //
 import Foundation
 
+
+extension NSDate
+{
+    convenience
+    init(dateString:String) {
+        let dateStringFormatter = NSDateFormatter()
+        dateStringFormatter.dateFormat = "yyyy-MM-dd"
+        dateStringFormatter.locale = NSLocale(localeIdentifier: "en_US_POSIX")
+        let d = dateStringFormatter.dateFromString(dateString)!
+        self.init(timeInterval:0, sinceDate:d)
+    }
+}
+
 class FlightDetails:NSObject, NSCoding {
     // Properties
     var departurePort : String?
     var departurePortCode : String?
     var arrivalPort : String?
     var arrivalPortCode : String?
-    var departureDate : String?
+    var departureDate : NSDate?
     var departureTime : String?
     var arrivalTime : String?
     var flightNumber : String?
@@ -23,7 +36,7 @@ class FlightDetails:NSObject, NSCoding {
     
     
     // Initializer
-    init(departurePort:String, departurePortCode:String, arrivalPort:String, arrivalPortCode: String, departureDate:String, departureTime:String, arrivalTime:String, flightNumber:String, aircraftType:String, cabinClass:String, seatNumber:String){
+    init(departurePort:String, departurePortCode:String, arrivalPort:String, arrivalPortCode: String, departureDate:NSDate, departureTime:String, arrivalTime:String, flightNumber:String, aircraftType:String, cabinClass:String, seatNumber:String){
         self.departurePort = departurePort
         self.departurePortCode = departurePortCode
         self.arrivalPort = arrivalPort
@@ -36,6 +49,12 @@ class FlightDetails:NSObject, NSCoding {
         self.cabinClass = cabinClass
         self.seatNumber = seatNumber
     }
+    
+    
+    
+    
+    
+
     
     // Encoding
     func encodeWithCoder(aCoder: NSCoder) {
@@ -57,7 +76,7 @@ class FlightDetails:NSObject, NSCoding {
         let departurePortCode = aDecoder.decodeObjectForKey("departurePortCode") as! String
         let arrivalPort = aDecoder.decodeObjectForKey("arrivalPort") as! String
         let arrivalPortCode = aDecoder.decodeObjectForKey("arrivalPortCode") as! String
-        let departureDate = aDecoder.decodeObjectForKey("departureDate") as! String
+        let departureDate = aDecoder.decodeObjectForKey("departureDate") as! NSDate
         let departureTime = aDecoder.decodeObjectForKey("departureTime") as! String
         let arrivalTime = aDecoder.decodeObjectForKey("arrivalTime") as! String
         let flightNumber = aDecoder.decodeObjectForKey("flightNumber") as! String
@@ -88,12 +107,13 @@ class Customer{
     
     static let sharedCustomerInfo = Customer()
     
-    private init(){
+     private init(){
         self.firstName = "Billy"
         self.lastName = "Chan"
         self.title = "Mr."
         
-        let fakeFlightRecords = FlightDetails(departurePort: "Hong Kong", departurePortCode: "HKG", arrivalPort: "Male", arrivalPortCode: "MLE", departureDate: "31-Aug", departureTime: "1730", arrivalTime: "2045", flightNumber: "CX601", aircraftType: "A333", cabinClass: "Y", seatNumber: "41A")
+        let fakeFlightRecords = FlightDetails(departurePort: "Hong Kong", departurePortCode: "HKG", arrivalPort: "Male", arrivalPortCode: "MLE", departureDate: NSDate(dateString: "2016-08-31")
+, departureTime: "1730", arrivalTime: "2045", flightNumber: "CX601", aircraftType: "A333", cabinClass: "Y", seatNumber: "41A")
         
         self.flightRecords=[]
         
@@ -103,7 +123,7 @@ class Customer{
         fakeFlightRecords.departurePortCode = "HKG"
         fakeFlightRecords.arrivalPort = "London Heathrow"
         fakeFlightRecords.arrivalPortCode = "LHR"
-        fakeFlightRecords.departureDate = "15-Jun"
+        fakeFlightRecords.departureDate = NSDate(dateString: "2016-07-15")
         fakeFlightRecords.departureTime = "2355"
         fakeFlightRecords.arrivalTime = "0540"
         fakeFlightRecords.flightNumber = "CX25"
@@ -117,7 +137,8 @@ class Customer{
         fakeFlightRecords.departurePortCode = "HKG"
         fakeFlightRecords.arrivalPort = "Sydney"
         fakeFlightRecords.arrivalPortCode = "SYD"
-        fakeFlightRecords.departureDate = "17-Feb"
+        fakeFlightRecords.departureDate = NSDate(dateString: "2016-02-17")
+
         fakeFlightRecords.departureTime = "2130"
         fakeFlightRecords.arrivalTime = "0845"
         fakeFlightRecords.flightNumber = "CX161"
