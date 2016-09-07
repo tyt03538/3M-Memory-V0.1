@@ -78,7 +78,9 @@ class Customer{
     var lastName: String
     var title: String
     
-    init(){
+    static let sharedCustomerInfo = Customer()
+    
+    private init(){
         self.firstName = "Billy"
         self.lastName = "Chan"
         self.title = "Mr."
