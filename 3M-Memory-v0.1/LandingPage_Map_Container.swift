@@ -14,6 +14,7 @@ class LandingPage_Map_Container: UIViewController {
     
     // You don't need to modify the default init(nibName:bundle:) method.
     
+    
     override func loadView() {
         // Create a GMSCameraPosition that tells the map to display the
         // coordinate -33.86,151.20 at zoom level 6.
@@ -49,6 +50,9 @@ class LandingPage_Map_Container: UIViewController {
         
         self.view = mapView
         
+        
     }
+    
+
     
 }
